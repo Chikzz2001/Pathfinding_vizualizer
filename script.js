@@ -142,18 +142,6 @@ function callAll(s) {
         dijkstra(si, sj, fi, fj)
         d = setInterval(fillPath_A, 10);
     }
-    if (s == "wall") 
-    {
-        recursiveDivision(0, 0, columns, rows)
-        for (var i = walls.length - 1; i >= 0; i--) 
-        {
-            if (walls[i] == ".node" + fi + "j" + fj) 
-            {
-                walls.splice(i, 1);
-            }
-        }
-        d = setInterval(fillWalls, 10);
-    }
 }
 
 // function to fill path with animation insted of filling in one instance
